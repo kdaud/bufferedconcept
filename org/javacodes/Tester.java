@@ -18,6 +18,16 @@ public class Tester {
 		student.put("Edward", "EDS");
 		student.put("Gamas", "BIT");
 		student.put("Ruth", "BBC");
+		boolean mycode = student.containsKey("Ruths");
+		System.out.println("Boolean Value: " + mycode);
+		
+		if (student.containsKey("Gama")) {
+			System.out.println("Have tested how sweet programming is in java");
+			System.out.println(student.get("Gama"));
+		}
+		else {
+			System.out.println("Null Exception");
+		}
 		
 		String course = student.get("Ruth");
 		System.out.println(course);
