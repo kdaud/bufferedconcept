@@ -6,6 +6,10 @@ import java.util.Map;
 
 public class Tester {
 	
+	static {
+		System.out.println("Hello Wild Uganda. Am a creed coder who write codes in java");
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("Hello Google");
 		Map<String, String> student = new HashMap<>(3);
