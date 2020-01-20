@@ -10,9 +10,10 @@ public class Tester {
 		Map<String, String> student = new HashMap<>();
 		student.put("Gama", "BSS");
 		student.put("Edward", "EDS");
-		String course = student.get("Daud");
+		student.put("Gama", "BIT");
+		String course = student.get("Gama");
 		System.out.println(course);
-		System.out.println(student.getClass().desiredAssertionStatus());
+		//System.out.println(student.getClass().desiredAssertionStatus());
 	}
 	
 }
