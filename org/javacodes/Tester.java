@@ -12,6 +12,7 @@ public class Tester {
 		student.put("Edward", "EDS");
 		String course = student.get("Daud");
 		System.out.println(course);
+		System.out.println(student.getClass());
 	}
 	
 }
