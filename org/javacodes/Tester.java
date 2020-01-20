@@ -8,14 +8,18 @@ public class Tester {
 	
 	public static void main(String[] args) {
 		System.out.println("Hello Google");
-		Map<String, String> student = new HashMap<>();
+		Map<String, String> student = new HashMap<>(3);
+		System.out.println(student.size());
 		student.put("Gama", "BSS");
 		student.put("Edward", "EDS");
-		student.put("Gama", "BIT");
-		student.put("Ruth", "BIT");
-		String course = student.get("Gama");
-		System.out.println(course);
+		student.put("Gamas", "BIT");
+		student.put("Ruth", "BBC");
 		
+		String course = student.get("Ruth");
+		System.out.println(course);
+		int caps = student.size();
+		System.out.println(caps);
+		System.out.println("_________________");
 		Map<String, String > lecturer= new Hashtable<>();
 		boolean capacity = lecturer.isEmpty();
 		System.out.println(capacity);
@@ -23,8 +27,7 @@ public class Tester {
 
 		//System.out.println(capacitys);
 		
-		lecturer.put("Kinene", "Java");
-		//System.out.println(capacitys);
+		lecturer.put("Kinenephil", "Java");
 		
 		lecturer.put("Joseph", "Php");
 		lecturer.put("Kinene", "C#");
