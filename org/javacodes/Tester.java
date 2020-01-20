@@ -19,14 +19,20 @@ public class Tester {
 		Map<String, String > lecturer= new Hashtable<>();
 		boolean capacity = lecturer.isEmpty();
 		System.out.println(capacity);
+		
+
+		//System.out.println(capacitys);
+		
 		lecturer.put("Kinene", "Java");
-		int capacitys = lecturer.size();
-		System.out.println(capacitys);
+		//System.out.println(capacitys);
+		
 		lecturer.put("Joseph", "Php");
 		lecturer.put("Kinene", "C#");
 		
-		System.out.println(capacity);
-		
+		int capacitys = lecturer.size();
+		System.out.println(capacitys);
+		System.out.println("Oops -----Oops");
+
 		String myteacher = lecturer.getOrDefault("Kinene", "Python");
 		System.out.println(myteacher);
 	}
